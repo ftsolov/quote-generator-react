@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import { getQuotesData, getRandomQuote } from "./helpers.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  const [data, setData] = useState<Array<{ [id: string]: any }>>([]);
+
+  function handleButtonClick() {
+    getQuotesData().then((_data) => {
+      setData(_data);
+    });
+  }
+
+  useEffect(() => {
+    getQuotesData().then((_data) => {
+      setData(_data);
+    });
+  }, []);
+
+  if (data.length > 0) {
+    const { quote, author } = getRandomQuote(data);
+
+    return (
+      <div className="card">
+        <h2>{quote}</h2>
+        <p>- {author}</p>
+        <button onClick={handleButtonClick}>Give me more!</button>
+      </div>
+    );
+  } else {
+    return <div></div>;
+  }
+};
+
+// } else {
+//   return <div></div>
+// }
 
 export default App;
