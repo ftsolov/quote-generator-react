@@ -14,13 +14,13 @@ body {
 
 button {
   outline: none;
-  border-radius: 6px;
+  border-radius: 0.2rem;
   padding: 1rem;
   border: none;
   background-color: darkorange;
   color: white;
   font-weight: bold;
-  margin: 1rem auto 0;
+  margin: 2rem 0 0;
 }
 
 h2 {
@@ -47,4 +47,37 @@ button:hover {
   align-items: center;
   border-radius: 8px;
   box-shadow: -6px 12px 74px -19px #d97200;
+  transition: transform 0.3s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.twitter {
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  align-self: flex-start;
+  background-color: #1DA1F2;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bouncy{
+  animation:bouncy 6s infinite ease-out;
+  position:relative;
+}
+
+@keyframes bouncy {
+  0%{top:0em}
+  40%{top:0em}
+  43%{top:-0.2em}
+  46%{top:0em}
+  48%{top:-0.1em}
+  50%{top:0em}
+  100%{top:0em;}
 }

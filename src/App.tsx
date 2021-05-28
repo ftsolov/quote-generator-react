@@ -24,7 +24,14 @@ const App = () => {
       <div className="card">
         <h2>{quote}</h2>
         <p>- {author}</p>
-        <button onClick={handleButtonClick}>Give me more!</button>
+        <div className={"buttons"}>
+          <button className="twitter bouncy">
+            <i className="fab fa-twitter" />
+          </button>
+          <button onClick={handleButtonClick}>
+            <i className="fas fa-redo-alt" /> New quote!
+          </button>
+        </div>
       </div>
     );
   } else {
