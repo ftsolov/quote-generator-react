@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ftsolov/quote-generator-react/tree/gh-pages/static/css/main.f43584fa.chunk.css",
-    "main.js": "/ftsolov/quote-generator-react/tree/gh-pages/static/js/main.4fc3f646.chunk.js",
-    "main.js.map": "/ftsolov/quote-generator-react/tree/gh-pages/static/js/main.4fc3f646.chunk.js.map",
-    "runtime-main.js": "/ftsolov/quote-generator-react/tree/gh-pages/static/js/runtime-main.cbd0df56.js",
-    "runtime-main.js.map": "/ftsolov/quote-generator-react/tree/gh-pages/static/js/runtime-main.cbd0df56.js.map",
-    "static/js/2.4650236d.chunk.js": "/ftsolov/quote-generator-react/tree/gh-pages/static/js/2.4650236d.chunk.js",
-    "static/js/2.4650236d.chunk.js.map": "/ftsolov/quote-generator-react/tree/gh-pages/static/js/2.4650236d.chunk.js.map",
-    "index.html": "/ftsolov/quote-generator-react/tree/gh-pages/index.html",
-    "static/css/main.f43584fa.chunk.css.map": "/ftsolov/quote-generator-react/tree/gh-pages/static/css/main.f43584fa.chunk.css.map",
-    "static/js/2.4650236d.chunk.js.LICENSE.txt": "/ftsolov/quote-generator-react/tree/gh-pages/static/js/2.4650236d.chunk.js.LICENSE.txt"
+    "main.css": "/quote-generator-react/static/css/main.f43584fa.chunk.css",
+    "main.js": "/quote-generator-react/static/js/main.4fc3f646.chunk.js",
+    "main.js.map": "/quote-generator-react/static/js/main.4fc3f646.chunk.js.map",
+    "runtime-main.js": "/quote-generator-react/static/js/runtime-main.e254c9d8.js",
+    "runtime-main.js.map": "/quote-generator-react/static/js/runtime-main.e254c9d8.js.map",
+    "static/js/2.4650236d.chunk.js": "/quote-generator-react/static/js/2.4650236d.chunk.js",
+    "static/js/2.4650236d.chunk.js.map": "/quote-generator-react/static/js/2.4650236d.chunk.js.map",
+    "index.html": "/quote-generator-react/index.html",
+    "static/css/main.f43584fa.chunk.css.map": "/quote-generator-react/static/css/main.f43584fa.chunk.css.map",
+    "static/js/2.4650236d.chunk.js.LICENSE.txt": "/quote-generator-react/static/js/2.4650236d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.cbd0df56.js",
+    "static/js/runtime-main.e254c9d8.js",
     "static/js/2.4650236d.chunk.js",
     "static/css/main.f43584fa.chunk.css",
     "static/js/main.4fc3f646.chunk.js"
