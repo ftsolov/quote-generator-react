@@ -28,11 +28,14 @@ const App = () => {
 
   return (
     <div>
-      <div className="card">
-        <h2>{currentQuoteObject.quote}</h2>
-        <p className="author">- {currentQuoteObject.author}</p>
+      <div className="card" id={"quote-box"}>
+        <h2 id={"text"}>{currentQuoteObject.quote}</h2>
+        <p className="author" id={"author"}>
+          - {currentQuoteObject.author}
+        </p>
         <div className={"buttons"}>
           <a
+            id={"new-quote"}
             className="twitter bouncy"
             href={twitterLink}
             target="_blank"
