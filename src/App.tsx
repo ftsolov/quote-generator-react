@@ -44,7 +44,8 @@ const App = () => {
             <i className="fab fa-twitter" />
           </a>
           <button onClick={handleButtonClick}>
-            <i className="fas fa-redo-alt" /> New quote!
+            {/*<i className="fas fa-redo-alt" />*/}
+            Give me another one!
           </button>
         </div>
       </div>
