@@ -1,46 +1,45 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import { getQuotesData, getRandomQuote } from "./helpers.js";
+import { getRandomQuote } from "./helpers.js";
+import * as quotesJSON from "./quotes.json";
 
 const App = () => {
-  const [data, setData] = useState<Array<{ [id: string]: any }>>([]);
+  const [currentQuoteObject, setCurrentQuoteObject] = useState<any>(
+    getRandomQuote((quotesJSON as any).default)
+  );
 
   function handleButtonClick() {
-    getQuotesData().then((_data) => {
-      setData(_data);
-    });
+    const quote = getRandomQuote((quotesJSON as any).default);
+    setCurrentQuoteObject(quote);
   }
 
-  useEffect(() => {
-    getQuotesData().then((_data) => {
-      setData(_data);
-    });
-  }, []);
+  function onKeyDown(e: any) {
+    console.log(e.code);
+  }
+  console.log(currentQuoteObject);
 
-  if (data.length > 0) {
-    const { quote, author } = getRandomQuote(data);
+  useEffect(() => {}, []);
+  const twitterLink = `https://twitter.com/intent/tweet?text="${currentQuoteObject.quote}" - ${currentQuoteObject.author}`;
 
-    return (
-      <div className="card">
-        <h2>{quote}</h2>
-        <p>- {author}</p>
-        <div className={"buttons"}>
-          <button className="twitter bouncy">
-            <i className="fab fa-twitter" />
-          </button>
-          <button onClick={handleButtonClick}>
-            <i className="fas fa-redo-alt" /> New quote!
-          </button>
-        </div>
+  return (
+    <div className="card" onKeyDown={onKeyDown}>
+      <h2>{currentQuoteObject.quote}</h2>
+      <p>- {currentQuoteObject.author}</p>
+      <div className={"buttons"}>
+        <a
+          className="twitter bouncy"
+          href={twitterLink}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fab fa-twitter" />
+        </a>
+        <button onClick={handleButtonClick}>
+          <i className="fas fa-redo-alt" /> New quote!
+        </button>
       </div>
-    );
-  } else {
-    return <div></div>;
-  }
+    </div>
+  );
 };
-
-// } else {
-//   return <div></div>
-// }
 
 export default App;

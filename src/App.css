@@ -59,6 +59,12 @@ button:hover {
   font-size: 1.5rem;
   align-self: flex-start;
   background-color: #1DA1F2;
+  outline: none;
+  border-radius: 0.2rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin: 2rem 0 0;
 }
 
 .buttons {
