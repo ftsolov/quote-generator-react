@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ftsolov/quote-generator-react/static/css/main.f43584fa.chunk.css",
+    "main.js": "/ftsolov/quote-generator-react/static/js/main.4fc3f646.chunk.js",
+    "main.js.map": "/ftsolov/quote-generator-react/static/js/main.4fc3f646.chunk.js.map",
+    "runtime-main.js": "/ftsolov/quote-generator-react/static/js/runtime-main.643c7e3d.js",
+    "runtime-main.js.map": "/ftsolov/quote-generator-react/static/js/runtime-main.643c7e3d.js.map",
+    "static/js/2.4650236d.chunk.js": "/ftsolov/quote-generator-react/static/js/2.4650236d.chunk.js",
+    "static/js/2.4650236d.chunk.js.map": "/ftsolov/quote-generator-react/static/js/2.4650236d.chunk.js.map",
+    "index.html": "/ftsolov/quote-generator-react/index.html",
+    "static/css/main.f43584fa.chunk.css.map": "/ftsolov/quote-generator-react/static/css/main.f43584fa.chunk.css.map",
+    "static/js/2.4650236d.chunk.js.LICENSE.txt": "/ftsolov/quote-generator-react/static/js/2.4650236d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.643c7e3d.js",
+    "static/js/2.4650236d.chunk.js",
+    "static/css/main.f43584fa.chunk.css",
+    "static/js/main.4fc3f646.chunk.js"
+  ]
+}
