@@ -14,7 +14,6 @@ const App = () => {
   }
 
   function onKeyDown(e: any) {
-    console.log(e.code);
     if (e.code === "Space") {
       handleButtonClick();
     }
