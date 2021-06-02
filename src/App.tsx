@@ -11,7 +11,6 @@ const App = () => {
   function handleButtonClick() {
     const quote = getRandomQuote((quotesJSON as any).default)
     $('#quote').fadeOut(300, function () {
-      console.log('poop')
       setCurrentQuoteObject(quote)
       $('#quote').fadeIn(300)
     })
