@@ -193,3 +193,20 @@ button:hover {
   }
 
 }
+
+@media only screen and (width: 420px) {
+  body {
+    background-color: white;
+    background-image: none;
+  }
+
+  body::before {
+    content: 'nice';
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+    top: 2rem;
+    left: 30%;
+    font-size: 5rem;
+    position: absolute;
+    z-index: 500;
+  }
+}
