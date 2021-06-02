@@ -188,4 +188,9 @@ button:hover {
     display: none;
   }
 
+  .logo {
+    top: 2.5rem;
+    height: 100px;
+  }
+
 }
