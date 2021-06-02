@@ -9,8 +9,12 @@ const App = () => {
   );
 
   function handleButtonClick() {
-    const quote = getRandomQuote((quotesJSON as any).default);
-    setCurrentQuoteObject(quote);
+    const quote = getRandomQuote((quotesJSON as any).default)
+    $('#quote').fadeOut(300, function () {
+      console.log('poop')
+      setCurrentQuoteObject(quote)
+      $('#quote').fadeIn(300)
+    })
   }
 
   function onKeyDown(e: any) {
@@ -28,10 +32,13 @@ const App = () => {
   return (
     <div>
       <div className="card" id={"quote-box"}>
-        <h2 id={"text"}>{currentQuoteObject.quote}</h2>
-        <p className="author" id={"author"}>
-          - {currentQuoteObject.author}
-        </p>
+        <div id={"quote"}>
+          <h2 id={"text"}>{currentQuoteObject.quote}</h2>
+          <p className="author" id={"author"}>
+            - {currentQuoteObject.author}
+          </p>
+        </div>
+
         <div className={"buttons"}>
           <a
             id={"new-quote"}
