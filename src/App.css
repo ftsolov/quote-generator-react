@@ -41,8 +41,8 @@ button:hover {
 .logo {
   animation: moveUpDown 4s ease-in-out infinite;
   position: absolute;
-  top: 3.5rem;
-  height: 120px;
+  top: 2rem;
+  height: 110px;
   margin: 0 auto;
   width: 100vw;
 }
@@ -140,7 +140,7 @@ button:hover {
 
 .hint {
   color: #653503;
-  margin: 2rem auto 0;
+  margin: 1rem auto 0;
   text-align: center;
   padding: 0 10%;
   line-height: 1.5;
@@ -155,12 +155,12 @@ button:hover {
 }
 
 .footer p {
-  color: white;
-  font-size: 0.6rem;
+  color: #653503;
+  font-size: 0.7rem;
 }
 
 .footer a i {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #FFDAAD;
 }
 
@@ -181,6 +181,7 @@ button:hover {
 @media only screen and (max-width: 440px) {
   .card {
     width: 80%;
+    margin-bottom: 2rem;
   }
 
   .hint {
@@ -188,8 +189,12 @@ button:hover {
   }
 
   .logo {
-    top: 2.5rem;
-    height: 100px;
+    top: 2rem;
+    height: 90px;
+  }
+
+  .footer {
+    bottom: 1rem;
   }
 
 }
